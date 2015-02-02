@@ -1,0 +1,13 @@
+/* Remove sidebar */
+#page:before {
+    display: none;
+}
+#page .site-content {
+    margin-left: 0px;
+}
+
+/* Center page */
+#page {
+    margin-left: auto;
+    margin-right: auto;
+}

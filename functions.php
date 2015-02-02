@@ -51,6 +51,7 @@ function bjorn_gus_portfolio_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'bjorn-gus-portfolio' ),
+        'social' => __( 'Social Menu', 'bjorn-gus-portfolio' ),
 	) );
 
 	/*
@@ -102,11 +103,17 @@ add_action( 'widgets_init', 'bjorn_gus_portfolio_widgets_init' );
 function bjorn_gus_portfolio_scripts() {
 	wp_enqueue_style( 'bjorn-gus-portfolio-style', get_stylesheet_uri() );
 
+    wp_enqueue_script( 'bjorn-gus-portfolio-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), '20150202', true );
+
+    wp_enqueue_script( 'bjorn-gus-portfolio-superfish-settings', get_template_directory_uri() . '/js/superfish-settings.js', array('bjorn-gus-portfolio-superfish'), '20150202', true );
+
+	wp_enqueue_script( 'bjorn-gus-portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
     wp_enqueue_style( 'bjorn-gus-portfolio-google-font-style', 'http://fonts.googleapis.com/css?family=Raleway:500,100,400|Open+Sans:400italic,400' );
 
     wp_enqueue_style('bjorn-gus-portfolio-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
-    wp_enqueue_script( 'bjorn-gus-portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+    wp_enqueue_style('bjorn-gus-custom-style', get_template_directory_uri() . '/css/custom-style-bjorn-gus.css');
 
 	wp_enqueue_script( 'bjorn-gus-portfolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
