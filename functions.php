@@ -102,7 +102,11 @@ add_action( 'widgets_init', 'bjorn_gus_portfolio_widgets_init' );
 function bjorn_gus_portfolio_scripts() {
 	wp_enqueue_style( 'bjorn-gus-portfolio-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'bjorn-gus-portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+    wp_enqueue_style( 'bjorn-gus-portfolio-google-font-style', 'http://fonts.googleapis.com/css?family=Raleway:500,100,400|Open+Sans:400italic,400' );
+
+    wp_enqueue_style('bjorn-gus-portfolio-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+    wp_enqueue_script( 'bjorn-gus-portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'bjorn-gus-portfolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -115,7 +119,7 @@ add_action( 'wp_enqueue_scripts', 'bjorn_gus_portfolio_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
