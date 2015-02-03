@@ -109,7 +109,9 @@ function bjorn_gus_portfolio_scripts() {
 
 	wp_enqueue_script( 'bjorn-gus-portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-    wp_enqueue_style( 'bjorn-gus-portfolio-google-font-style', 'http://fonts.googleapis.com/css?family=Raleway:500,100,400|Open+Sans:400italic,400' );
+    wp_enqueue_script( 'bjorn-gus-portfolio-hide-search', get_template_directory_uri() . '/js/hide-search.js', array('jquery'), '20150203', true );
+
+    wp_enqueue_style( 'bjorn-gus-portfolio-google-font-style', 'http://fonts.googleapis.com/css?family=Lato|Raleway:500,100,400|Open+Sans:400italic,400' );
 
     wp_enqueue_style('bjorn-gus-portfolio-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 

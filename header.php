@@ -30,8 +30,21 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'bjorn-gus-portfolio' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+
+            <div class="search-toggle">
+                <i class="fa fa-search"></i>
+                <a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'bjorn-gus-portfolio' ); ?></a>
+            </div>
+
             <?php bjorn_gus_portfolio_social_menu(); ?>
 		</nav><!-- #site-navigation -->
+
+        <div id="search-container" class="search-box-wrapper clear">
+            <div class="search-box clear">
+                <?php get_search_form(); ?>
+            </div>
+        </div>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
