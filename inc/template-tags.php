@@ -83,7 +83,7 @@ function bjorn_gus_portfolio_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'bjorn-gus-portfolio' ),
+		_x( '%s', 'post date', 'bjorn-gus-portfolio' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
@@ -92,7 +92,7 @@ function bjorn_gus_portfolio_posted_on() {
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
+	echo '<span class="posted-on">' . $posted_on . '</span>';
 
 }
 endif;
@@ -111,9 +111,9 @@ function bjorn_gus_portfolio_entry_footer() {
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'bjorn-gus-portfolio' ) );
+		$tags_list = get_the_tag_list( '<span class="fa fa-tag"></span>', __( ' <span class="fa fa-tag"></span>', 'bjorn-gus-portfolio' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'bjorn-gus-portfolio' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links ">' . __( '%1$s', 'bjorn-gus-portfolio' ) . '</span>', $tags_list );
 		}
 	}
 
