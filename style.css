@@ -1164,23 +1164,26 @@ a:active {
         margin-bottom: 1em;
     }
 }
-@media screen and (max-width: 1854px){
-    /*
-    .posted-on:before {
-        content: ' on ';
+
+.posted-on:before {
+    content: ' on ';
+}
+.posted-on:after {
+    content: '.';
+}
+
+@media screen and (min-width: 1320px) {
+    .single .posted-on:before,
+    .single .posted-on:after {
+        content: '';
     }
-    .posted-on:after {
-        content: '.';
-    }
-    */
 }
 
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
+.format-aside .entry-content {
+    margin-top: 1em;
 }
 
 /*--------------------------------------------------------------
@@ -1305,6 +1308,39 @@ ol.children { list-style-type: none; }
     background: hsl(100, 39%, 57%);
 }
 
+
+/*--------------------------------------------------------------
+10.4  Index and Archive
+--------------------------------------------------------------*/
+
+.continue-reading {
+    margin: 0 4rem;
+    font-weight: 900;
+    font-size: 16px;
+    font-size: 1.6rem;
+
+}
+.continue-reading > a {
+    display: block;
+    margin-left: 0;
+}
+
+.continue-reading i { margin-left: .5em; }
+
+.sticky-post {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}
+.taxonomy-description {
+    padding-top: 2rem;
+    margin: 2rem 0;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    border-top: 1px solid hsl(0, 0%, 75%);
+    border-bottom: 1px solid hsl(0, 0%, 75%);
+}
+
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/
@@ -1318,6 +1354,7 @@ ol.children { list-style-type: none; }
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+
 
 /*--------------------------------------------------------------
 12.0 Media
@@ -1365,6 +1402,10 @@ object {
         width: 1060px;
         float: right;
     }
+}
+.small-index-thumbnail {
+    margin-top: -1em;
+    margin-bottom: 1em;
 }
 
 /*--------------------------------------------------------------
