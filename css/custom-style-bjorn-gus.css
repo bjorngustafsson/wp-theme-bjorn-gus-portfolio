@@ -1,3 +1,50 @@
+/**/
+.site-content {
+    padding-bottom: 4em;
+    background: #b2b2b2;
+}
+.single .site-content,
+.page .site-content {
+    background: #fff;
+    background: hsl(0, 0%, 100%);
+}
+
+/*Main layout */
+.content-area {
+    width: 100%;
+    float: left;
+    margin-left: -380px;
+    padding-left: 380px;
+}
+.site-main {
+ /*   background: #b2b2b2;*/
+}
+.site-content .widget-area {
+    width: 380px;
+    float: right;
+    padding: 4rem;
+    background: #fff;
+    background: hsl(0, 0%, 100%);
+}
+.site-footer {
+    clear: both;
+    width: 100%;
+}
+.entry-header,
+.entry-content,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation {
+    position: relative;
+    max-width: 780px;
+    max-width: 78rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+
 /* Remove sidebar */
 #page:before {
     display: none;
@@ -73,3 +120,78 @@ input[type="search"] {
 .search-box .search-submit {
     display: none;
 }
+
+/* Footer */
+.site-footer {
+    padding: 2em;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #313131;
+    background: hsl(0, 0%, 19%);
+}
+
+.site-footer a {
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+}
+
+.site-info {
+    text-align: center;
+}
+
+/*Custom styles footer widget */
+.widget_recent_entries li:before,
+.widget_recent_comments li:before,
+.widget_archive li:before {
+    display: block;
+    float: left;
+    padding-top: 2px;
+    margin-left: -2.5em;
+    font-family: 'fontawesome';
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+.widget_recent_entries li,
+.widget_recent_comments li { margin: 0 0 .5em 2.5em; }
+
+.widget_recent_entries li:before { content: "\f036"; }
+
+.widget_recent_comments li:before { content: "\f075"; }
+
+.widget_archive li { margin: 0 0 0 2.5em; }
+
+.widget_archive li:before { content: "\f187"; }
+
+.widget_nav_menu a,
+.widget_pages a {
+    display: block;
+    padding: 1em 0;
+    border-bottom: solid 1px hsl(0, 0%, 90%);
+}
+
+.widget_nav_menu li,
+.widget_pages li { padding-top: 0; }
+
+.widget_rss li { margin-bottom: .5em; }
+
+.widget_rss .rss-date,
+.widget_rss cite {
+    display: block;
+    font-size: 85%;
+}
+
+/* Footer widgets responsive */
+@media screen and (max-width: 879px) {
+    #footer-widgets { width: 100%!important; }
+
+    .footer-widgets .widget {
+        float: none;
+        width: 100%;
+        margin: 0 0 8rem;
+    }
+}
+
