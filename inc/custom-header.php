@@ -26,8 +26,8 @@ function bjorn_gus_portfolio_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'bjorn_gus_portfolio_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 1280,
+		'height'                 => 300,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'bjorn_gus_portfolio_header_style',
 		'admin-head-callback'    => 'bjorn_gus_portfolio_admin_header_style',
