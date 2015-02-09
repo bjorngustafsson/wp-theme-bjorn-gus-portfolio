@@ -127,8 +127,6 @@ function bjorn_gus_portfolio_scripts() {
         wp_enqueue_style( 'bjorn-gus-portfolio-layout-style' , get_template_directory_uri() . '/layouts/content-sidebar.css');
     }
 
-    wp_enqueue_style('bjorn-gus-custom-style', get_template_directory_uri() . '/css/custom-style-bjorn-gus.css');
-
     wp_enqueue_script( 'bjorn-gus-portfolio-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), '20150202', true );
 
     wp_enqueue_script( 'bjorn-gus-portfolio-superfish-settings', get_template_directory_uri() . '/js/superfish-settings.js', array('bjorn-gus-portfolio-superfish'), '20150202', true );

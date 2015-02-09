@@ -1,0 +1,377 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bjorns portfolio theme v0.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2015-01-06 02:24:02+00:00\n"
+"PO-Revision-Date: 2015-02-09 13:21+0100\n"
+"Last-Translator: Björn Gustafsson <bjogu419@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"Language: sv_SE\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ bjorn-gus-portfolio
+#: comments.php:45
+msgid "Comment navigation"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: comments.php:57
+msgid "Comments are closed."
+msgstr "Kommentarer är stängda."
+
+# @ bjorn-gus-portfolio
+#: content-none.php:18
+msgid "Nothing Found"
+msgstr "Ingenting funnet"
+
+# @ bjorn-gus-portfolio
+#: content-none.php:26
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#. translators: %s: Name of current post
+#: content-aside.php:39 content-page.php:28 content-single.php:50
+#: content.php:69
+msgid "Pages:"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: content-page.php:35 inc/template-tags.php:126
+msgid "Edit"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: footer.php:16
+msgid "http://wordpress.org/"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: footer.php:16
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: footer.php:18
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: functions.php:59 header.php:31
+msgid "Primary Menu"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: functions.php:95
+msgid "Sidebar"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: header.php:22
+msgid "Skip to content"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:91
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#. translators: used between list items, there is a space after the comma
+#: content-single.php:24 content.php:31 inc/template-tags.php:108
+msgid ", "
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:110
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Postad i %1$s"
+
+# @ bjorn-gus-portfolio
+#: content-aside.php:51 content.php:45 inc/template-tags.php:122
+msgid "Leave a comment"
+msgstr "Lämna en kommentar"
+
+# @ bjorn-gus-portfolio
+#: content-aside.php:51 content.php:45 inc/template-tags.php:122
+msgid "1 Comment"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: content-aside.php:51 content.php:45 inc/template-tags.php:122
+msgid "% Comments"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:143
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:145
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:147
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:149
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:149
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:151
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:151
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:153
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:153
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:156
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:158
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:160
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:162
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:164
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:166
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:168
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:170
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:172
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:175
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:179
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:181
+msgid "Archives"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "En kommentar: "
+msgid_plural "%1$s kommentarer:"
+msgstr[0] ""
+msgstr[1] ""
+
+# @ bjorn-gus-portfolio
+#: comments.php:46
+msgid "<i class=\"fa fa-arrow-circle-o-left\"></i> Older Comments"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: comments.php:47
+msgid "Newer Comments <i class=\"fa fa-arrow-circle-o-right\"></i>"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: content-none.php:16
+msgid "Page not available"
+msgstr "Sidan ej tillgänglig"
+
+# @ bjorn-gus-portfolio
+#: content-none.php:17
+msgid "Hittade inget på: <em>"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: content-none.php:30
+msgid ""
+"You seem to be lost. To find what you are looking for check out the most "
+"recent articles below or try a search:"
+msgstr ""
+"Du verkar vara bortkommen. För att hitta det du letar efter kolla de senaste "
+"artiklarna nedan eller gör en sökning :"
+
+# @ bjorn-gus-portfolio
+#: content-none.php:35
+msgid ""
+"Nothing matched your search terms. Check out the most recent articles below "
+"or try searching for something else:"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: content-none.php:40
+msgid ""
+"It seems we can’t find what you’re looking for. Perhaps searching can help."
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: content.php:14
+msgid "Läs mer: "
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: content.php:76
+msgid "Continue reading "
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: functions.php:60
+msgid "Social Menu"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: functions.php:105
+msgid "Footer Widgets"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: functions.php:106
+msgid "Footer Widgets Area in the footer of the site"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: header.php:36
+msgid "Search"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:86
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:114
+msgid " <span class=\"fa fa-tag\"></span>"
+msgstr ""
+
+# @ bjorn-gus-portfolio
+#: inc/template-tags.php:116
+#, php-format
+msgid "%1$s"
+msgstr ""

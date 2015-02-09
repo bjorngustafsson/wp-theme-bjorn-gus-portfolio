@@ -14,7 +14,7 @@
             <h1 class="entry-title">
                 <?php
                 if ( is_404() ) { _e( 'Page not available', 'bjorn-gus-portfolio' ); }
-                else if ( is_search() ) { printf( __( 'Nothing found for <em>', 'bjorn-gus-portfolio') . get_search_query() . '</em>' ); }
+                else if ( is_search() ) { printf( __( 'Hittade inget på: <em>', 'bjorn-gus-portfolio') . get_search_query() . '</em>' ); }
                 else { _e( 'Nothing Found', 'bjorn-gus-portfolio' );}
                 ?>
             </h1>
@@ -32,7 +32,7 @@
 
             <?php elseif ( is_search() ) : ?>
 
-                <p><?php _e( 'Nothing matched your search terms. Check out the most recent articles below or try searching for something else:', 'bjorn-gus-portfolio' ); ?></p>
+                <p><?php echo _e( 'Ingenting matchade dina sökord . Kolla in de senaste artiklarna nedan eller prova att söka efter något annat', 'bjorn-gus-portfolio' ); ?></p>
                 <?php get_search_form(); ?>
 
             <?php else : ?>
