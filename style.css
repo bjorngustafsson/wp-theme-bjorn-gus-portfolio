@@ -967,6 +967,9 @@ a:active {
     color: #000;
     color: hsl(0, 0%, 0%);
 }
+.page .entry-title {
+    margin-top: .7em;
+}
 .entry-content a {
     text-decoration: underline;
 }
