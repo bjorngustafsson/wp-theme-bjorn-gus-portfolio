@@ -22,12 +22,16 @@ if ( ! function_exists( 'bjorn_gus_portfolio_setup' ) ) :
  */
 function bjorn_gus_portfolio_setup() {
 
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on bjorn-gus-portfolio, use a find and replace
-	 * to change 'bjorn-gus-portfolio' to the name of your theme in all the template files
-	 */
+    // This theme styles the visual editor to resemble the theme style.
+    $font_url = 'http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,900,900italic|PT+Serif:400,700,400italic,700italic';
+    add_editor_style( array( 'inc/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
+
+    /*
+     * Make theme available for translation.
+     * Translations can be filed in the /languages/ directory.
+     * If you're building a theme based on bjorn-gus-portfolio, use a find and replace
+     * to change 'bjorn-gus-portfolio' to the name of your theme in all the template files
+     */
 	load_theme_textdomain( 'bjorn-gus-portfolio', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
