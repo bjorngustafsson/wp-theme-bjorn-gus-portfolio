@@ -79,6 +79,9 @@
         <footer class="entry-footer continue-reading">
             <?php echo '<a href="' . get_permalink() . '" title="' . __('Continue reading ', 'bjorn-gus-portfolio') . get_the_title() . '" rel="bookmark">Läs mer<i class="fa fa-arrow-circle-o-right"></i></a>'; ?>
             <?php bjorn_gus_portfolio_entry_footer(); ?>
+            <hr>
+
         </footer><!-- .entry-footer -->
+
     </div><!-- . index-box -->
 </article><!-- #post-## -->

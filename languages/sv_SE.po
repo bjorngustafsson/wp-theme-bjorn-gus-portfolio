@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Bjorns portfolio theme v0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
 "POT-Creation-Date: 2015-01-06 02:24:02+00:00\n"
-"PO-Revision-Date: 2015-02-09 13:21+0100\n"
+"PO-Revision-Date: 2015-02-10 11:24+0100\n"
 "Last-Translator: Björn Gustafsson <bjogu419@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -72,7 +72,7 @@ msgstr ""
 # @ bjorn-gus-portfolio
 #: functions.php:59 header.php:31
 msgid "Primary Menu"
-msgstr ""
+msgstr "Meny"
 
 # @ bjorn-gus-portfolio
 #: functions.php:95

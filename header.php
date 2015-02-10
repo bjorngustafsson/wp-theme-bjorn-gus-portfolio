@@ -42,7 +42,6 @@
                 <a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'bjorn-gus-portfolio' ); ?></a>
             </div>
 
-            <?php bjorn_gus_portfolio_social_menu(); ?>
 		</nav><!-- #site-navigation -->
 
         <div id="search-container" class="search-box-wrapper clear">

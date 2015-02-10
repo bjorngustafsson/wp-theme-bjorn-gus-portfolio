@@ -11,12 +11,10 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+
         <?php get_sidebar('footer'); ?>
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'bjorn-gus-portfolio' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'bjorn-gus-portfolio' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'bjorn-gus-portfolio' ), 'bjorn-gus-portfolio', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+        <?php bjorn_gus_portfolio_social_menu(); ?>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
