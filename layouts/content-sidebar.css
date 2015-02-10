@@ -10,7 +10,7 @@ Layout: Content-Sidebar
     padding-left: 380px;
 }
 .site-main {
-    background: #b2b2b2;
+    background: #fff;
 }
 .site-content .widget-area {
     width: 380px;
@@ -30,7 +30,9 @@ Layout: Content-Sidebar
 .tag-links,
 .post-navigation,
 .comments-area,
-.paging-navigation {
+.paging-navigation,
+.single-post-thumbnail,
+.page-header {
     position: relative;
     max-width: 780px;
     max-width: 78rem;
@@ -39,7 +41,7 @@ Layout: Content-Sidebar
 }
 .site-content {
     padding-bottom: 4em;
-    background: #b2b2b2 url(../images/pattern.svg) repeat;
+    background: url(../images/pattern.svg) repeat;
 }
 
 .single .site-content,
@@ -86,24 +88,19 @@ Layout: Content-Sidebar
     }
 }
 
-@media screen and (min-width: 1820px) {
-    .image-shifter {
-        width: 1060px;
-        float: none;
-        margin: 0 auto;
-    }
+
+.small-index-thumbnail {
+    /*
+        margin-top: -1em;
+        margin-bottom: 1em;
+    */
+}
+.single-post-thumbnail{
+    padding:0 0 2rem 0;
+    float: left;
 }
 
-@media screen and (min-width: 1540px) and (max-width: 1820px) {
-    .image-shifter { margin-right: 380px;}
-}
 
-@media screen and (min-width: 1440px) and (max-width: 1819px) {
-    .image-shifter {
-        width: 1060px;
-        float: right;
-    }
-}
 
 .index-box {
     max-width: 780px;

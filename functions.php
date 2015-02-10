@@ -121,7 +121,8 @@ add_action( 'widgets_init', 'bjorn_gus_portfolio_widgets_init' );
 function bjorn_gus_portfolio_scripts() {
 	wp_enqueue_style( 'bjorn-gus-portfolio-style', get_stylesheet_uri() );
 
-    if (is_page_template('page-templates/page-nosidebar.php')) {
+    //use custom css if we use a page template or are on a single post
+    if (is_page_template('page-templates/page-nosidebar.php') || is_single()) {
         wp_enqueue_style( 'bjorn-gus-portfolio-layout-style' , get_template_directory_uri() . '/layouts/no-sidebar.css');
     } else {
         wp_enqueue_style( 'bjorn-gus-portfolio-layout-style' , get_template_directory_uri() . '/layouts/content-sidebar.css');
