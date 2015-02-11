@@ -633,7 +633,7 @@ a:active {
     cursor: pointer;
     display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
     .menu-toggle {
         display: block;
         height: 3.75em;
@@ -644,6 +644,8 @@ a:active {
         text-decoration: none;
         line-height: 3.75em;
         color: white;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .main-navigation.toggled .nav-menu {
@@ -769,20 +771,6 @@ a:active {
 
 .menu-social li a[href*="linkedin.com"]::before { content: '\f0e1'; }
 
-@media screen and (max-width: 600px) {
-    #menu-social ul {
-        position: absolute;
-        top: 0;
-        right: 6rem;
-        display: block;
-    }
-
-    #menu-social li a {
-        padding-left:.5em;
-        padding-right: .5em;
-    }
-}
-
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -825,11 +813,25 @@ a:active {
     letter-spacing: 1em;
     text-transform: uppercase;
     color: #e6a029;
+}
 
+@media screen and (max-width: 660px) {
+    .site-title a {
+        letter-spacing: 0.8em;
+    }
 }
 
 #menu-main-menu a {
     color: #e6a029;
+}
+
+@media screen and (max-width: 1290px) {
+    .site-title a {
+        letter-spacing: 0.8em;
+    }
+    #menu-main-menu {
+        clear: left;
+    }
 }
 
 
@@ -1585,7 +1587,8 @@ Header
     background: hsl(0, 0%, 30%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
+
     .search-toggle {
         position: absolute;
         top: 0;
@@ -1666,3 +1669,25 @@ input[type="search"] {
 
 }
 
+#menu-social-items{
+    margin-top: 2em;
+    margin-bottom: 1em;
+ }
+
+#menu-social-items li {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 900px) {
+    #footer-widgets {
+        float: left;
+        clear: both;
+    }
+    .footer-widgets .widget_text {
+        text-align: left;
+    }
+    #menu-social-items{
+        margin-top: 0;
+    }
+
+}

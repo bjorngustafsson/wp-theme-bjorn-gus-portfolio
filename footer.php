@@ -12,8 +12,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-        <?php get_sidebar('footer'); ?>
         <?php bjorn_gus_portfolio_social_menu(); ?>
+        <?php get_sidebar('footer'); ?>
+
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -2,15 +2,9 @@
 Theme Name: bjorn-gus-portfolio
 Layout: Content-Sidebar
 */
-
-.content-area {
-    width: 100%;
-    float: left;
-    margin-left: -380px;
-    padding-left: 380px;
-}
-.site-main {
-    background: #fff;
+.site-content {
+    padding-bottom: 4em;
+    background: url(../images/pattern.svg) repeat;
 }
 .site-content .widget-area {
     width: 380px;
@@ -22,6 +16,12 @@ Layout: Content-Sidebar
 .site-footer {
     clear: both;
     width: 100%;
+}
+
+.single .site-content,
+.page .site-content {
+    background: #fff;
+    background: hsl(0, 0%, 100%);
 }
 
 .entry-header,
@@ -40,21 +40,25 @@ Layout: Content-Sidebar
     padding: 0 4rem;
     margin: 0 auto;
 }
-.site-content {
-    padding-bottom: 4em;
-    background: url(../images/pattern.svg) repeat;
+
+.page-header,
+.paging-navigation {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    list-style-type: none;
+    background: #fff;
 }
 
-.single .site-content,
-.page .site-content {
-    background: #fff;
-    background: hsl(0, 0%, 100%);
+.page-header {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 @media screen and (min-width: 1540px) {
     .content-area {
         float: left;
-        width: 100%;
+        min-width: 100%;
         margin-right: -380px;
     }
 }
@@ -79,16 +83,18 @@ Layout: Content-Sidebar
     }
 
 }
-
 @media screen and (max-width: 1159px) {
     .site-content .widget-area {
         width: auto;
         max-width: 780px;
-        float: none;
+        float: left;
         margin: 1em auto 0;
     }
 }
 
+.site-main {
+    background: #fff;
+}
 
 .small-index-thumbnail {
     /*
@@ -101,13 +107,11 @@ Layout: Content-Sidebar
     float: left;
 }
 
-
-
 .index-box {
     max-width: 780px;
     max-width: 78rem;
     padding: 0;
-    margin: 0 auto 0;
+    margin: 0 auto;
     background: #fff;
     background: hsl(0, 0%, 100%);
 }
@@ -135,19 +139,7 @@ Layout: Content-Sidebar
     background: #fff;
 }
 
-.page-header,
-.paging-navigation {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-bottom: 2em;
-    list-style-type: none;
-    background: #fff;
-}
 
-.page-header {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
 
 
 
