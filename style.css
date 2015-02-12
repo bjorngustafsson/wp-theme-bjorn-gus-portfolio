@@ -1148,8 +1148,8 @@ a:active {
     .entry-content p,
     .entry-content ul,
     .entry-content ol  {
-        font-size: 16px;
-        font-size: 1.6rem;
+        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .entry-content blockquote p {
@@ -1241,7 +1241,7 @@ a:active {
 @media screen and (min-width: 1460px){
     .single .entry-meta {
         width: 120px;
-        margin-left: -160px;
+        margin-left: -190px;
         float: left;
         text-align: right;
     }
@@ -1273,6 +1273,28 @@ a:active {
 
 .index-box hr {
 margin: 2em 0 0 0 ;
+}
+
+span.cat-links {
+    margin-right: 1em;
+}
+
+.entry-meta span,
+.tags-links .fa-tag{
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.entry-meta i{
+   margin-right: 0.4em;
+}
+
+.tags-links .fa-tag{
+    display: inline;
+}
+
+.entry-meta .fa{
+    color: #e6a029;
 }
 
 /*--------------------------------------------------------------
