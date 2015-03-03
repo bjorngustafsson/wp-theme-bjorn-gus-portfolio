@@ -747,6 +747,8 @@ a:active {
     margin: 0;
 }
 
+.menu-social li a[href*="facebook.com"]::before { margin-right: 5px; }
+
 .menu-social li a[href*="facebook.com"]::before { content: '\f09a'; }
 
 .menu-social li a[href*="twitter.com"]::before { content: '\f099'; }
@@ -833,6 +835,8 @@ a:active {
         clear: left;
     }
 }
+
+.menu li a[href*="github.com"]{font-family: Lat, sans-serif }
 
 
 
@@ -1046,8 +1050,8 @@ a:active {
 
 .entry-title {
     margin: 0;
-    font-size: 40px;
-    font-size: 4rem;
+    font-size: 30px;
+    font-size: 3rem;
     line-height: 1.3em;
     color: #000;
     color: hsl(0, 0%, 0%);
@@ -1098,8 +1102,8 @@ a:active {
 .entry-content p,
 .entry-content ul,
 .entry-content ol {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 1.6em;
 }
 
@@ -1183,6 +1187,10 @@ a:active {
      font-size: 1.4rem;
  }
 .entry-meta a { font-weight: 600; }
+
+.tags-links .fa-tag {
+    margin-right: 3px;
+}
 
 .entry-footer {
     margin-top: 3rem;

@@ -28,30 +28,34 @@
             $custom_field_keys_trimmed = array();
 
             //Iterate trough them
-            foreach ($custom_field_keys as $key => $value)
-            {
-                $valuet = trim($value);
-                // the if test excludes values for WordPress internally maintained
-                // custom keys such as _edit_last and _edit_lock.
-                if ( '_' == $valuet{0} || $valuet ==='enclosure'  )
-                    continue;
+            if (is_array($custom_field_keys)){
+                foreach ($custom_field_keys as $key => $value)
+                {
+                    $valuet = trim($value);
+                    // the if test excludes values for WordPress internally maintained
+                    // custom keys such as _edit_last and _edit_lock.
+                    if ( '_' == $valuet{0} || $valuet ==='enclosure'  )
+                        continue;
 
-                array_push($custom_field_keys_trimmed, $valuet);
+                    array_push($custom_field_keys_trimmed, $valuet);
+                }
+
+                foreach ($custom_field_keys_trimmed as $correctKey ){
+                    $values = get_post_custom_values($correctKey);
+
+                    //if a key has a certain type echo it and add an suiting fontawesome icon
+                    echo "<span><a href=" . $values{0} . ">";
+
+                    if ($correctKey ==="Video") { echo '<i class="fa fa-video-camera"></i>'; }
+                    if ($correctKey ==="Code") { echo  '<i class="fa fa-file-code-o"></i>'; }
+                    if ($correctKey ==="Report") { echo '<i class="fa-file-pdf-o"></i>'; }
+                    if ($correctKey ==="Github") { echo '<i class="fa fa-github"></i>'; }
+
+                    echo $correctKey . "</a></span>" ;
+                }
+
             }
 
-            foreach ($custom_field_keys_trimmed as $correctKey ){
-                $values = get_post_custom_values($correctKey);
-
-                //if a key has a certain type echo it and add an suiting fontawesome icon
-                echo "<span><a href=" . $values{0} . ">";
-
-                if ($correctKey ==="Video") { echo '<i class="fa fa-video-camera"></i>'; }
-                if ($correctKey ==="Code") { echo  '<i class="fa fa-file-code-o"></i>'; }
-                if ($correctKey ==="Report") { echo '<i class="fa-file-pdf-o"></i>'; }
-                if ($correctKey ==="Github") { echo '<i class="fa fa-github"></i>'; }
-
-                echo $correctKey . "</a></span>" ;
-            }
 
 
             echo "<span> Etiketter: </span>";
