@@ -109,12 +109,6 @@ function bjorn_gus_portfolio_entry_footer() {
 		if ( $categories_list && bjorn_gus_portfolio_categorized_blog() ) {
 			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'bjorn-gus-portfolio' ) . '</span>', $categories_list );
 		}
-
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '<span class="fa fa-tag"></span>', __( ' <span class="fa fa-tag"></span>', 'bjorn-gus-portfolio' ) );
-		if ( $tags_list ) {
-			printf( '<span class="tags-links ">' . __( '%1$s', 'bjorn-gus-portfolio' ) . '</span>', $tags_list );
-		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {

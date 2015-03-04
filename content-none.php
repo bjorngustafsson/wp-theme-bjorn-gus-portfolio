@@ -32,7 +32,7 @@
 
             <?php elseif ( is_search() ) : ?>
 
-                <p><?php echo _e( 'Ingenting matchade dina sökord . Kolla in de senaste artiklarna nedan eller prova att söka efter något annat', 'bjorn-gus-portfolio' ); ?></p>
+                <p><?php echo _e( 'Ingenting matchade dina sökord. Kolla in de senaste artiklarna nedan eller prova att söka efter något annat', 'bjorn-gus-portfolio' ); ?></p>
                 <?php get_search_form(); ?>
 
             <?php else : ?>
@@ -48,7 +48,7 @@
     if ( is_404() || is_search() ) {
 
         ?>
-        <header class="page-header"><h1 class="page-title">Most recent posts:</h1></header>
+        <header class="page-header"><h1 class="page-title">Senaste artiklarna:</h1></header>
         <?php
         // Get the 6 latest posts
         $args = array(

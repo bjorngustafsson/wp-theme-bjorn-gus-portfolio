@@ -29,6 +29,7 @@
 
             //Iterate trough them
             if (is_array($custom_field_keys)){
+                echo "Material till projektet:";
                 foreach ($custom_field_keys as $key => $value)
                 {
                     $valuet = trim($value);
@@ -44,11 +45,12 @@
                     $values = get_post_custom_values($correctKey);
 
                     //if a key has a certain type echo it and add an suiting fontawesome icon
-                    echo "<span><a href=" . $values{0} . ">";
+                    echo "<span class='project-material'><a href=" . $values{0} . ">";
 
+                    if ($correctKey ==="Länk") { echo '<i class="fa fa-link"></i>'; }
                     if ($correctKey ==="Video") { echo '<i class="fa fa-video-camera"></i>'; }
-                    if ($correctKey ==="Code") { echo  '<i class="fa fa-file-code-o"></i>'; }
-                    if ($correctKey ==="Report") { echo '<i class="fa-file-pdf-o"></i>'; }
+                    if ($correctKey ==="Källkod") { echo  '<i class="fa fa-file-code-o"></i>'; }
+                    if ($correctKey ==="Rapport") { echo '<i class="fa-file-pdf-o"></i>'; }
                     if ($correctKey ==="Github") { echo '<i class="fa fa-github"></i>'; }
 
                     echo $correctKey . "</a></span>" ;
@@ -58,7 +60,7 @@
 
 
 
-            echo "<span> Etiketter: </span>";
+            echo "<span class='meta-labels'> Etiketter: </span>";
             /* translators: used between list items, there is a space after the comma */
             $tags_list = get_the_tag_list( '<span class="fa fa-tag"></span>', __( ' <span class="fa fa-tag"></span>', 'bjorn-gus-portfolio' ) );
             if ( $tags_list ) {

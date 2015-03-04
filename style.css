@@ -522,8 +522,8 @@ a {
 }
 
 a:visited {
-    color: #333;
-    color: hsl(0, 0%, 20%);
+   /* color: #333;
+    color: hsl(0, 0%, 20%);*/
 }
 
 a:hover,
@@ -634,6 +634,11 @@ a:active {
     display: none;
 }
 @media screen and (max-width: 660px) {
+
+    .search-toggle {
+        display: none;
+    }
+
     .menu-toggle {
         display: block;
         height: 3.75em;
@@ -824,7 +829,8 @@ a:active {
 }
 
 #menu-main-menu a {
-    color: #e6a029;
+    color: hsl(43, 21%, 58%) ;
+    color: #AB9E7D ;
 }
 
 @media screen and (max-width: 1290px) {
@@ -1041,20 +1047,29 @@ a:active {
     float: right;
 }
 
+h1.widget-title {
+    color: #e6a029;
+}
+
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
+.entry-title a {
+    color: hsl(43, 21%, 58%) ;
+    color: #AB9E7D ;
+}
+
 
 .entry-title {
     margin: 0;
     font-size: 30px;
     font-size: 3rem;
     line-height: 1.3em;
-    color: #000;
-    color: hsl(0, 0%, 0%);
+    color: hsl(43, 21%, 58%) ;
+    color: #AB9E7D ;
 }
 .page .entry-title {
     margin-top: .7em;
@@ -1246,7 +1261,7 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
-@media screen and (min-width: 1460px){
+@media screen and (min-width: 1280px){
     .single .entry-meta {
         width: 120px;
         margin-left: -190px;
@@ -1305,6 +1320,25 @@ span.cat-links {
     color: #e6a029;
 }
 
+.tags-links .fa-tag {
+    color: #e6a029;
+}
+/*
+.entry-content a {
+    color: #e6a029;
+}
+*/
+span.project-material{
+margin-bottom: 0;
+}
+
+.meta-labels{
+    margin-top: 0.5em;
+}
+
+.project-material .fa{
+    color: #DD7676;
+}
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
@@ -1721,3 +1755,18 @@ input[type="search"] {
     }
 
 }
+
+
+@media screen and (max-width: 500px) {
+    .image-me {
+        float: none;
+    }
+}
+
+@media screen and  (max-width: 700px){
+    .entry-content ul {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+}
+
