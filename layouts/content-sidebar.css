@@ -139,6 +139,21 @@ Layout: Content-Sidebar
     background: #fff;
 }
 
+@media screen and (max-width: 640px){
+    .entry-header,
+    .entry-content,
+    .entry-footer,
+    .tag-links,
+    .post-navigation,
+    .comments-area,
+    .paging-navigation,
+    .single-post-thumbnail,
+    .page-header,
+    .posts-navigation {
+        padding: 0 1rem;
+    }
+}
+
 
 
 

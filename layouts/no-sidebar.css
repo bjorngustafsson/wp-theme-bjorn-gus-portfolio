@@ -6,6 +6,7 @@ Layout: No sidebar
 .page .site-content {
     background: #fff;
     background: hsl(0, 0%, 100%);
+    background: url("http://p1.pichost.me/i/58/1823222.jpg") no-repeat 100%;
 }
 
 .site-footer {
@@ -26,6 +27,19 @@ Layout: No sidebar
     max-width: 58rem;
     padding: 0 4rem;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 640px){
+    .entry-header,
+    .page-header,
+    .entry-content,
+    .entry-footer,
+    .tag-links,
+    .post-navigation,
+    .comments-area,
+    .paging-navigation {
+        padding: 0 1rem;
+    }
 }
 
 .page-header,
