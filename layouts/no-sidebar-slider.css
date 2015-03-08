@@ -30,9 +30,6 @@ Layout: No sidebar
 .comments-area,
 .paging-navigation {
     position: relative;
-    max-width: 580px;
-    max-width: 58rem;
-    padding: 0 4rem;
     margin: 0 auto;
 }
 

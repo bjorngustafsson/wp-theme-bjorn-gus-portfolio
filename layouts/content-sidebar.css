@@ -4,14 +4,15 @@ Layout: Content-Sidebar
 */
 .site-content {
     padding-bottom: 4em;
-    background: url(../images/pattern.svg) repeat;
+    background: #ECE4C5;
 }
+
 .site-content .widget-area {
     width: 380px;
     float: right;
     padding: 4rem;
-    background: #fff;
-    background: hsl(0, 0%, 100%);
+    /*background: #fff;
+    background: hsl(0, 0%, 100%);*/
 }
 .site-footer {
     clear: both;
@@ -22,6 +23,7 @@ Layout: Content-Sidebar
 .page .site-content {
     background: #fff;
     background: hsl(0, 0%, 100%);
+
 }
 
 .entry-header,
@@ -47,7 +49,6 @@ Layout: Content-Sidebar
     padding-bottom: 1em;
     margin-bottom: 2em;
     list-style-type: none;
-    background: #fff;
 }
 
 .page-header {
@@ -93,7 +94,7 @@ Layout: Content-Sidebar
 }
 
 .site-main {
-    background: #fff;
+    /*background: #fff;*/
 }
 
 .small-index-thumbnail {
@@ -112,8 +113,8 @@ Layout: Content-Sidebar
     max-width: 78rem;
     padding: 0;
     margin: 0 auto;
-    background: #fff;
-    background: hsl(0, 0%, 100%);
+    /*background: #fff;
+    background: hsl(0, 0%, 100%);*/
 }
 
 .index-box blockquote.alignleft,

@@ -29,7 +29,7 @@
 
             //Iterate trough them
             if (is_array($custom_field_keys)){
-                echo "Material till projektet:";
+
                 foreach ($custom_field_keys as $key => $value)
                 {
                     $valuet = trim($value);
@@ -41,6 +41,13 @@
                     array_push($custom_field_keys_trimmed, $valuet);
                 }
 
+                //Only write out material to project if we have custom fields
+                $errors = array_filter($custom_field_keys_trimmed);
+                if (!empty($errors)) {
+
+                    echo "<span class='material-header'>Material till projektet: </span> ";
+                }
+
                 foreach ($custom_field_keys_trimmed as $correctKey ){
                     $values = get_post_custom_values($correctKey);
 
@@ -50,17 +57,14 @@
                     if ($correctKey ==="Länk") { echo '<i class="fa fa-link"></i>'; }
                     if ($correctKey ==="Video") { echo '<i class="fa fa-video-camera"></i>'; }
                     if ($correctKey ==="Källkod") { echo  '<i class="fa fa-file-code-o"></i>'; }
-                    if ($correctKey ==="Rapport") { echo '<i class="fa-file-pdf-o"></i>'; }
+                    if ($correctKey ==="Rapport") { echo '<i class="fa fa-file-pdf-o"></i>'; }
                     if ($correctKey ==="Github") { echo '<i class="fa fa-github"></i>'; }
 
-                    echo $correctKey . "</a></span>" ;
+                    echo $correctKey . " </a></span>" ;
                 }
-
             }
 
-
-
-            echo "<span class='meta-labels'> Etiketter: </span>";
+            echo "<span class='meta-labels'>Etiketter: </span>";
             /* translators: used between list items, there is a space after the comma */
             $tags_list = get_the_tag_list( '<span class="fa fa-tag"></span>', __( ' <span class="fa fa-tag"></span>', 'bjorn-gus-portfolio' ) );
             if ( $tags_list ) {
@@ -88,8 +92,7 @@
             echo '</div>';
         }
         ?>
-
-		<?php the_content(); ?>
+        <?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'bjorn-gus-portfolio' ),
